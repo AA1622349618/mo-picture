@@ -20,6 +20,7 @@ create table if not exists user
     isDelete     tinyint      default 0                 not null comment '是否删除',
     UNIQUE KEY uk_userAccount (userAccount),
     INDEX idx_userName (userName)
+<<<<<<< HEAD
 ) comment '用户' collate = utf8mb4_unicode_ci;
 
 -- 图片表
@@ -47,3 +48,6 @@ create table if not exists picture
     INDEX idx_tags (tags),                 -- 提升基于标签的查询性能
     INDEX idx_userId (userId)              -- 提升基于用户 ID 的查询性能
 ) comment '图片' collate = utf8mb4_unicode_ci;
+=======
+) comment '用户' collate = utf8mb4_unicode_ci;
+>>>>>>> origin/master
